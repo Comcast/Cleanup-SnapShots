@@ -1,0 +1,38 @@
+# Use a # before comments, these lines will be excluded as input
+# To be used with function Get-EmailConfig
+# This config file will use input parameters for the Send-MailMessage function
+# Required:  From, Subject, To, SmtpServer (unless $PSEmailServer is set)
+# Optional:  Attachments, Bcc, Body(use CRLF if you want an extra line in the body and not using -BodyAsHtml),
+#	Cc, Port, DeliveryNotificationOption (None<default>,OnSuccess, OnFailure, Delay, Never)
+#	Priority (Normal<default>, High, Low)
+#	Encoding (ASCII<default>, UTF8, UTF7, UTF32, Unicode, BigEndianUnicode, OEM)
+#	If you are going to use -BodyAsHtlm be sure to use html tags
+# Enter each line as parameter=desiredInput
+# One entry per line, function splits on first '='
+
+# Required Parameters
+from=
+smtpserver=
+subject=
+to=
+
+# Optional Parameters
+attachments=
+bcc=
+body=
+cc=
+deliverynotificationoption=
+encoding=
+port=
+priority=
+
+
+
+
+
+
+
+
+
+
+
